@@ -1,4 +1,4 @@
-package SeleniumEndToEnd.SeleniumEndToEnd;
+package SeleniumPractise.SeleniumPractise;
 
 /**
  * Hello world!

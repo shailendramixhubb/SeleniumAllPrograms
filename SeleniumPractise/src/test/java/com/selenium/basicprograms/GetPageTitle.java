@@ -1,4 +1,4 @@
-package allBasicPrograms;
+package com.selenium.basicprograms;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
-public class Disable_Allow_Block_popup {
+public class GetPageTitle {
 	
 	public static WebDriver driver;
 
@@ -16,15 +16,12 @@ public class Disable_Allow_Block_popup {
 		// TODO Auto-generated method stub
 		
 		WebDriverManager.chromedriver().setup();
+		driver=new ChromeDriver();
 		ChromeOptions op = new ChromeOptions();
 	      //disable notification parameter
 	      op.addArguments("--disable-notifications");
-		driver=new ChromeDriver(op);
-		
-		
-	     
-	      
-	      
+	      // configure options parameter to Chrome driver
+	      WebDriver driver = new ChromeDriver(op);
 	      
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com/");
@@ -37,6 +34,20 @@ public class Disable_Allow_Block_popup {
 		 
 		
 		
+		
+	String actualtitle=	driver.getTitle();
+		
+		
+		String expectedTitle="Facebook";
+	if(actualtitle.equalsIgnoreCase(expectedTitle)) {
+		
+		System.out.println("Test Passed"+actualtitle);
+	}
+	else {
+		
+		System.out.println("Test Failed");
+	}
+	
 		
 
 		Thread.sleep(5000);

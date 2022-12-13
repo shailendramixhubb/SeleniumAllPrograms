@@ -1,4 +1,4 @@
-package allBasicPrograms;
+package com.selenium.basicprograms;
 
 import java.util.concurrent.TimeUnit;
 
