@@ -22,6 +22,7 @@ public class Palindom {
 		else {
 			
 			System.out.println("Not a palindrom");
+			
 		}
 	}
 
