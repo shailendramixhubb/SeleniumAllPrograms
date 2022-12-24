@@ -49,10 +49,6 @@ public class RandomOTPSEND {
 		Thread.sleep(1000);
 		driver.navigate().refresh();
 		
-		  // driver.findElement(By.xpath("//input[@aria-label='Please enter verification code. Character 1']")).clear(); 
-		 // textBox.sendKeys(otpStr); 
-		//  Thread.sleep(3000);
-		//  driver.findElement(By.xpath( "//*[@id=\"kt_login_signin_form\"]/div[3]/button")).click();
 		
 		 		
 		}
