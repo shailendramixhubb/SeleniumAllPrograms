@@ -15,7 +15,7 @@ public class UserInput {
 		// Next only showing first text not showing after space
 		String lname=s.next();
 		
-		System.out.println("Please enter you package");
+		System.out.println("Please enter your package");
 		float packages=s.nextFloat();
 		
 		
