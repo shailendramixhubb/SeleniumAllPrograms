@@ -7,6 +7,7 @@ import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -72,11 +73,25 @@ public class EmailSendMultiple {
 				// String text=driver.findElement(By.xpath("//h4[contains(text(),'Please confirm
 				// if you want to send an email to spe')]")).getText();
 				// System.out.println(text);
+				Actions act =  new Actions(driver);
+				act.moveToElement(driver.findElement(By.xpath("//tbody/tr[4]/td[5]/div[2]/span[1]/button[1]/span[1]//*[name()='svg']//*[name()='g' and @id='push_icon']//*[name()='g' and @id='noun-button-click-691746']"))).click().perform();
+				
+				/*
+				 * try { driver.findElement(By.
+				 * xpath("//tbody/tr[4]/td[5]/div[2]/span[1]/button[1]/span[1]//*[name()='svg']//*[name()='g' and @id='push_icon']//*[name()='g' and @id='noun-button-click-691746']"
+				 * )).click(); } catch (Exception e) { JavascriptExecutor executor =
+				 * (JavascriptExecutor) driver; executor.executeScript("arguments[1].click();",
+				 * driver.findElement(By.
+				 * xpath("//tbody/tr[4]/td[5]/div[2]/span[1]/button[1]/span[1]//*[name()='svg']//*[name()='g' and @id='push_icon']//*[name()='g' and @id='noun-button-click-691746']"
+				 * ))); }
+				 */
 
-				WebElement ele = driver.findElement(By.xpath(
-						"//tbody/tr[4]/td[5]/div[2]/span[1]/button[1]/span[1]//*[name()='svg']//*[name()='g' and @id='push_icon']//*[name()='g' and @id='noun-button-click-691746']"));
-				ele.click();
-				Thread.sleep(5000);
+				/*
+				 * WebElement ele = driver.findElement(By.xpath(
+				 * "//tbody/tr[4]/td[5]/div[2]/span[1]/button[1]/span[1]//*[name()='svg']//*[name()='g' and @id='push_icon']//*[name()='g' and @id='noun-button-click-691746']"
+				 * )); ele.click(); Thread.sleep(5000);
+				 */
+					 
 			}
 
 		} else {
