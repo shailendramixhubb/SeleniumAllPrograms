@@ -7,7 +7,7 @@ package java_cod_Harry;
  * @Shailendra
  *
  */
-public class WhileLoop {
+public class Do_While_2 {
 
 	/**
 	 * @param args
@@ -15,17 +15,12 @@ public class WhileLoop {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int i=1;
-		
-		while( i<=3) {
-			
-			System.out.println(i);
+		int i=10;
+		do {
+			System.out.println("I am happy");
 			i++;
-			System.out.println("Demo");
-			
 		}
-		
-		
+		while(i<11);
 
 	}
 
