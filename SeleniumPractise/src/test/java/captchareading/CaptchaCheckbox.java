@@ -28,6 +28,8 @@ public class CaptchaCheckbox {
 		
 		driver.get("https://advertisinghelp.walmart.com/s/captcha");
 		
+		System.out.println(driver.getTitle());
+		
 		driver.findElement(By.xpath("//*[@class=\"recaptcha-checkbox-border\"]")).click();
 	}
 
