@@ -32,10 +32,13 @@ public class IRCTC_CaptchaRead {
 		File src= driver.findElement(By.xpath("//div[@class='captcha_div']")).getScreenshotAs(OutputType.FILE);
 		
 		String path=System.getProperty("user.dir")+"/screenshot/captcha.png";
+		String[] parts = path.split("\\s+");
 		FileHandler.copy(src, new File(path));
 		
+		System.out.println(path);
+		
 		ITesseract image= new Tesseract();
-	String imagetext=	image.doOCR(new File(path));
+	String imagetext=	image.doOCR(new File(parts.toString()));
 		
 		System.out.println(imagetext);
 		

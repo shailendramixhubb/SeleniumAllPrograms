@@ -25,10 +25,6 @@ public class UserInput {
 		System.out.println("Please enter mobile number");
 		boolean b1= s.hasNextDouble();
 		
-		
-		
-		
-		
 		System.out.println("Please enter your name first letter");
 		char c= s.next().charAt(0);
 		

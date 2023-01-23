@@ -3,7 +3,6 @@
  */
 package captchareading;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -30,7 +29,10 @@ public class CaptchaCheckbox {
 		
 		System.out.println(driver.getTitle());
 		
-		driver.findElement(By.xpath("//*[@class=\"recaptcha-checkbox-border\"]")).click();
+		//driver.findElement(By.xpath("//*[@class=\"recaptcha-checkbox-border\"]")).click();
+		//System.out.println(driver.getPageSource());
+		System.out.println(driver.getClass());
+		
 	}
 
 }
