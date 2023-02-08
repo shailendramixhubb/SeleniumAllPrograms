@@ -12,7 +12,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  * @Shailendra
  *
  */
-public class AmazonCaptcha {
+public class WalmartCaptcha {
 
 	/**
 	 * @param args

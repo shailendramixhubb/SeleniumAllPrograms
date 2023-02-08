@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mixhubbprograms.EmailSend">
+      <class name="mixhubbprograms.EmailSendMultiple">
         <methods>
-          <include name="screenShot"/>
-          <include name="mixhubb"/>
+          <include name="login"/>
+          <include name="terminateBrowser"/>
+          <include name="launchBrowser"/>
         </methods>
-      </class> <!-- mixhubbprograms.EmailSend -->
+      </class> <!-- mixhubbprograms.EmailSendMultiple -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

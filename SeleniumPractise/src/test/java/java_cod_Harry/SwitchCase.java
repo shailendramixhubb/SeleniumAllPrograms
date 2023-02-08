@@ -43,13 +43,13 @@ public class SwitchCase {
 		
 		
 		
-		/*
-		 * if(age>=56) { System.out.println("You have good experince"); }
-		 * 
-		 * else if(age>=45 && age<56) { System.out.println("You have semi experience");
-		 * 
-		 * } else { System.out.println("Not sufficient"); }
-		 */
+		
+		  if(age>=56) { System.out.println("You have good experince"); }
+		  
+		  else if(age>=45 && age<56) { System.out.println("You have semi experience");
+		  
+		  } else { System.out.println("Not sufficient"); }
+		 
 
 	}
 

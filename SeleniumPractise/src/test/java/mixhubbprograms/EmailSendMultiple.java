@@ -63,13 +63,13 @@ public class EmailSendMultiple {
 
 			Thread.sleep(5000);
 
-			for (int i = 0; i <= 5; i++) {
+			for (int i = 0; i <= 95; i++) {
 				/*
 				 * link_btn("//tbody/tr/td[4]/div[1]"); String myWindowHandle =
 				 * driver.getWindowHandle(); driver.switchTo().window(myWindowHandle);
 				 */
-				driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
+				
+				Thread.sleep(2000);
 				// String text=driver.findElement(By.xpath("//h4[contains(text(),'Please confirm
 				// if you want to send an email to spe')]")).getText();
 				// System.out.println(text);
