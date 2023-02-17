@@ -26,6 +26,7 @@ public class RandomOTPSEND {
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		for(int i=0;i<=1000;i++) {
+			System.out.println("Start loop");
 			/*
 			 * String numbers = "0123456789";
 			 */		Random rand = new Random();
